@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .todo-item{
+            display: flex;
+            align-items: center;
+            height: 40px;
+            border-bottom: 1px solid black;
+        }
+        .todo-item .toggle{
+            margin-right: 20px;
+        }
+        .todo-item .title{
+            font-size: 24px;
+            color: #000;
+        }
+        .todo-item .title.finished{
+            text-decoration: line-through;
+            color:gray;
+        }
+        .todo-item .delete{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>
